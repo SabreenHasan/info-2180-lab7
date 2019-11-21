@@ -13,12 +13,6 @@ window.onload = function{
 			httpReq.open('GET', url);
 			httpReq.send();
 		}
-		if else (buttonCountry.checked == true && null == textField) {
-			var url = "world.php?allcountries=";
-			httpReq.onreadystatechange = loadPage;
-			httpReq.open('GET', url);
-			httpReq.send();
-		}
 	})
 
 	buttonCities.addEventListener("click", function(e) {
@@ -27,7 +21,7 @@ window.onload = function{
 		var textField = document.getElementById("entries");
 
 		if (buttonCities.checked == true && null != textField) {
-			var url = "world.php?cities=" + textField;
+			var url = "world.php?country=Jamaica&context=" + textField;
 			httpReq.onreadystatechange = loadPage;
 			httpReq.open('GET', url);
 			httpReq.send();
