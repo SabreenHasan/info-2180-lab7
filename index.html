@@ -10,20 +10,23 @@
 		<!-- you write this -->
 		<script src="world.js" type="text/javascript"></script>
 	</head>
-
 	<body>
 		<header>
-			<h1>World Database Lookup</h1>
+			<div id = "heading">				
+				<h1><img src="worldMap.png"></img> World Database Lookup</h1>
+			</div>
 		</header>
-
+		
 		<main>
 			<div id="controls">
-				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
+				<label for="country"></label>
+				<input id="entries" type="search" name="country" placeholder="Enter country name here...." />
+				<br></br>
+				<button id="country">Lookup Country</button>
+				<button id="cities">Lookup Cities</button>
 			</div>
 			
-			<div id="result">
+			<div id="results">
 				<!-- countries will appear here -->
 			</div>
 		</main>
