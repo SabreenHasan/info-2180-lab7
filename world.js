@@ -1,4 +1,10 @@
 window.onload = function{
+	var sanitize = function(string) {
+		var temp = document.createElement('div');
+		temp.textContext = string;
+		return temp.innerHTML;
+	}
+
 	var buttonCities = document.getElementById("cities");
 	var buttonCountry = document.getElementById("country");
 
